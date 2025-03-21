@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "session_name": "Example",
+        "start_up": true,
+        "execute_commands": true,
+        "system_commands": []
+    },
+    {
+        "id": 2,
+        "session_name": "Example2",
+        "start_up": true,
+        "execute_commands": true,
+        "system_commands": [
+            "sshpass -p \"<pwd here>\" ssh -o StrictHostKeyChecking=no <username>@<host-ip-here>",
+            "cd /home/work",
+            "export spring_profiles_active=default",
+            "export JAVA_HOME=/home/wms/jvm/jdk-15.0.2",
+            "export SPRING_OUTPUT_ANSI_ENABLED=ALWAYS",
+            "./gradlew clean && ./gradlew bootRun"
+        ]
+    }
+]
