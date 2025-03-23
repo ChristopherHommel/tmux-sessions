@@ -237,6 +237,8 @@ main(){
     install_python_dependencies
     install_tmux
 
+    chmod +x run.sh
+
    ./run.sh
 
     if [ $? -ne 0 ]; then
