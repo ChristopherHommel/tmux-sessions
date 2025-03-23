@@ -237,8 +237,8 @@ main(){
     install_python_dependencies
     install_tmux
 
-    chmod +x "$PWD/run.sh"
-    "$PWD/run.sh"
+    chmod +x "$PWD/tmux-sessions/run.sh"
+    "$PWD/tmux-sessions/run.sh"
 
 
     if [ $? -ne 0 ]; then
