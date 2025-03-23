@@ -237,9 +237,9 @@ main(){
     install_python_dependencies
     install_tmux
 
-    chmod +x run.sh
+    chmod +x "$PWD/run.sh"
+    "$PWD/run.sh"
 
-   ./run.sh
 
     if [ $? -ne 0 ]; then
         write_error "Build script failed"
